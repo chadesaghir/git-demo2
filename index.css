@@ -1,0 +1,20 @@
+#first{
+    padding: 20px;
+    margin: 50px;
+    border: 5px solid black;
+    background-color: blue;
+}
+
+#second{
+    padding: 50px;
+    margin: auto;
+    border: 5px dotted blue;
+    background-color: yellow;
+}
+
+#third{
+    padding: 50px;
+    margin: 50px;
+    border: 5px dotted rgb(220, 243, 8);
+    background-color: blue;
+}
