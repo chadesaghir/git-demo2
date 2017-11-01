@@ -1,18 +1,40 @@
 <!doctype html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-   
-</head>
-<html>
-
-<body>
-
-    <div id = "first"><p>hello my name is Chade</p></div>
+<html ng-app>
+  <head>
     
-    <div id = "second"><p>I'm mad at the UofM</p></div>
+  </head>
+  <body>
+    <div>
+       <label>Mad Lib</label><br><br>
+      
+      <label>Noun</label>
+      <input type="text" ng-model="noun" placeholder="Enter a noun here">
+      <label>Adjective</label>
+      <input type="text" ng-model="adjective" placeholder="Enter a adjective here">
+      <input type="text" ng-model="smart" placeholder="Are you smart?">
+      <input type="number" ng-model="number" placeholder="Number?">
+      
+      
+      <hr>
+      <h1> 
+      Persons with the name of
+      <span ng-if="noun">{{noun}}</span>
+      <span ng-if="!noun">________</span>
+      are
+      <span ng-if="adjective">{{adjective}}</span>
+      <span ng-if="!adjective">________</span><br><br>
+      
+      Therefore
+      {{noun}} is smart is {{ smart.toLowerCase() ==='yes' || adjective==='smart'}}<br><br>
+      
+      <span ng-if="number">{{number * number}}</span>
+      
+      
+      
+      </h1>
+     
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     
-    <div id = "third"><p>They keep losing to MSU</p></div>
-
-</body>
+  </body>
 </html>
